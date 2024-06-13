@@ -18,6 +18,9 @@ class PlaylistResource extends JsonResource
         return [
             'id' =>$this->id,
             'name' => $this->name,
+            'genre_type' => $this->genre_type,
+            'duration' => $this->duration,
+            'is_favourite' => $this->is_favourite,
             // 'details' => $this->details
         ];
     }

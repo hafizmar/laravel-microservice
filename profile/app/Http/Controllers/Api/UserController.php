@@ -29,7 +29,9 @@ class UserController extends Controller
         return ApiResponseClass::sendResponse(ProfileResource::collection($data),'',200);
     }
 
-    public function store() {
-        return 2;
+    public function store(Request $request) {
+        $data = $this->profileInterface->index();
+
+        return ApiResponseClass::sendResponse(ProfileResource::collection($data),'',200);
     }
 }
